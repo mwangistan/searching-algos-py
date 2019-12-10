@@ -6,10 +6,10 @@ class BinarySearchTestCases(unittest.TestCase):
         self.assertFalse(bsearch([], 1))
 
     def test_item_found(self):
-        self.assertTrue(bsearch([1, 'a', '2', 9], '2'))
+        self.assertTrue(bsearch([2, 3, 4, 10, 40], 2))
     
     def test_item_not_found(self):
-        self.assertFalse(bsearch([1, 'a', '2', 9], 't'))
+        self.assertFalse(bsearch([2, 3, 4, 10, 40 ], 50))
 
 if __name__ == '__main__':
     unittest.main()
