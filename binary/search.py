@@ -20,7 +20,7 @@ def bsearch_rec(lst, elem, start, end):
     '''
     if len(lst) == 0:
         return False
-    if start < end:
+    if start <= end:
         mid = start + (end - start) // 2
         if lst[mid] == elem:
             return True
@@ -28,4 +28,5 @@ def bsearch_rec(lst, elem, start, end):
             return bsearch_rec(lst, elem, mid + 1, end)
         else:
             return bsearch_rec(lst, elem, start, mid - 1 )
+    return False
          
